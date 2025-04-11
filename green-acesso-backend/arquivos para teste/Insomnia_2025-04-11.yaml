@@ -1,0 +1,119 @@
+type: collection.insomnia.rest/5.0
+name: Green
+meta:
+  id: wrk_3f5bb5a164424723917e8d198ba3503f
+  created: 1744308185084
+  modified: 1744308185084
+collection:
+  - url: http://localhost:3000/importar/csv
+    name: ImportarCSV
+    meta:
+      id: req_ddd99130e5a54a9689759148efa91b65
+      created: 1744308199259
+      modified: 1744371616130
+      isPrivate: false
+      sortKey: -1744308199259
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_1993315c0a0f41ce99117230a3d1e12e
+          name: csvFile
+          disabled: false
+          type: file
+          fileName: C:\Users\Pedro\Downloads\Dados - dados.csv
+        - id: pair_906e0caab5374483b7306cda5c6cd837
+          name: csvFile
+          disabled: true
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/boletos
+    name: New Request
+    meta:
+      id: req_d911172efdae4d6fad04c3b2a09511b3
+      created: 1744330260241
+      modified: 1744372794881
+      isPrivate: false
+      sortKey: -1744330260241
+    method: GET
+    parameters:
+      - id: pair_8eedc917710e43cb9499edcdf555572a
+        name: nome
+        value: jose
+        disabled: true
+      - id: pair_17f2135e65074b6384d78c8f7fe6f52e
+        name: valor_inicial
+        value: "100"
+        disabled: true
+      - id: pair_666f2ce662dc46548036da0e129acd2e
+        name: valor_final
+        value: "200"
+        disabled: true
+      - id: pair_9f694ecc8cc943eb97b43df6b02d93e8
+        name: id_lote
+        value: "01"
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/importar/pdf
+    name: importarPDF
+    meta:
+      id: req_f47d05215dbc4413b89f3abca9f3c89f
+      created: 1744366112303
+      modified: 1744366179765
+      isPrivate: false
+      sortKey: -1744366112303
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_4b13ea8a0a5e4d16b054af13e555f185
+          name: pdfFile
+          disabled: false
+          type: file
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_f666bd2478823c6fb0b38843840620e0dabf2af9
+    created: 1744308185093
+    modified: 1744308185093
+environments:
+  name: Base Environment
+  meta:
+    id: env_f666bd2478823c6fb0b38843840620e0dabf2af9
+    created: 1744308185088
+    modified: 1744308185088
+    isPrivate: false
